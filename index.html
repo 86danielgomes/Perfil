@@ -58,9 +58,28 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+		
+		<style>
+		.bg_video{
+			position: fixed; 
+			right: 0; 
+			bottom: 0;
+			min-width: 100%; 
+			min-height: 100%;
+			width: auto; 
+			height: auto; 
+			z-index: -1000;
+			background: url(images/torre.jpg) no-repeat;
+			background-size: cover; 
+		}
+		</style>
 
 	</head>
-	<body style="background-image: url(images/bg_img.jpg);">
+	<body>
+		<video autoplay loop poster="polina.jpg" class="bg_video">
+			<source src="videos/bg.webm" type="video/webm">
+			<source src="videos/bg.mp4" type="video/mp4">
+		</video>
 	
 	<div id="fh5co-main">
 		<div class="fh5co-tab-wrap">
